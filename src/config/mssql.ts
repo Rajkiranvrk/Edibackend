@@ -10,8 +10,7 @@ export const sqlConfig: mssql.config = {
   user: process.env.MSSQL_USER || 'ktt_sg',
   password: process.env.MSSQL_PASSWORD || 'Ktt@20252025',
   server: process.env.MSSQL_SERVER || '10.0.0.36',
-  database: process.env.MSSQL_DATABASE || 'Ktt_prod',
-  port: parseInt(process.env.MSSQL_PORT || '1433', 10),
+  database: process.env.MSSQL_DATABASE || 'Ktt_prod',  
   options: {
     encrypt: process.env.MSSQL_ENCRYPT === 'true' || true,
     trustServerCertificate: process.env.MSSQL_TRUST_CERT === 'false' ? false : true,
