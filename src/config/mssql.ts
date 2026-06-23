@@ -156,7 +156,7 @@ export const initializeMssqlDatabase = async () => {
 
               -- Totals & Logistics
               transport_mode VARCHAR(20),
-              ctry_final_dest VARCHAR(10),
+              ctry_final_dest VARCHAR(150),
               declared_value DECIMAL(18, 2),
               total_weight DECIMAL(18, 4),
               total_weight_unit VARCHAR(10),
