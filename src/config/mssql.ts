@@ -7,10 +7,10 @@ import { uploadFolderPath } from './storage';
 dotenv.config();
 
 export const sqlConfig: mssql.config = {
-  user: process.env.MSSQL_USER || 'sa',
-  password: process.env.MSSQL_PASSWORD || 'YourStrongPassword123',
-  server: process.env.MSSQL_SERVER || 'localhost',
-  database: process.env.MSSQL_DATABASE || 'edi_db',
+  user: process.env.MSSQL_USER || 'ktt_sg',
+  password: process.env.MSSQL_PASSWORD || 'Ktt@20252025',
+  server: process.env.MSSQL_SERVER || '10.0.0.36',
+  database: process.env.MSSQL_DATABASE || 'Ktt_prod',
   port: parseInt(process.env.MSSQL_PORT || '1433', 10),
   options: {
     encrypt: process.env.MSSQL_ENCRYPT === 'true' || true,
